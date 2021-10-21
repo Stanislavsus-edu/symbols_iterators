@@ -17,7 +17,7 @@ export default class Team {
         }
     }
 
-    *[Symbol.iterator]() {
+    [Symbol.iterator]() {
     const membIt = Array.from(this.members.values());
     let i = 0;
     return {
